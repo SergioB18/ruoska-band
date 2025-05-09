@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Bebas Neue Regular';
+    src: url('../fonts/bebas/BebasNeueRegular.eot');
+    src: url('../fonts/bebas/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/bebas/BebasNeueRegular.woff') format('woff'),
+    url('../fonts/bebas/BebasNeueRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Marvel-Regular';
+    src: local('Marvel Regular'), local('Marvel-Regular'),
+        url('../fonts/marvel/Marvel.woff2') format('woff2'), 
+        url('../fonts/marvel/Marvel.woff') format('woff'),
+        url('../fonts/marvel/Marvel.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+

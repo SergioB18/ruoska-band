@@ -1,0 +1,62 @@
+.photos {
+    min-height: 750px;
+    background: black;
+    .albums {
+        padding-top: 40px;
+        display: grid;
+        grid-template-columns: 1fr 272px 1fr;
+        grid-template-rows: repeat(2, 240px);
+        justify-content: center;
+        gap: 30px;
+        padding-bottom: 40px;
+        &__item {
+            display: flex;
+            position: relative;
+            transition: all 0.6s;
+            &:hover {
+                filter: grayscale(100%);
+                transform: scale(1.1);
+            }
+        }
+        &__img {
+            width: 100%;  
+            height: 100%;
+            object-fit: cover;
+            border: 2px white solid;
+        }
+        &__text {
+            display: flex;
+            position: absolute;
+            background: white;
+            clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+            height: 46px;
+            width: 220px;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            justify-content: center;
+            align-items: center;
+            bottom: 0px;
+            right: 0px;
+        }
+        .item5 {
+            grid-column: 2 / 4;
+        } 
+    }
+    .polygon2 {
+        clip-path: polygon(0 0, 45% 0, 100% 0, 100% 100%, 80% 63%, 48% 71%, 54% 27%, 20% 26%);
+        background-color: white;
+        width: 100px;
+        height: 100px;
+        margin-left: auto;
+        margin-bottom: -100px;
+    }
+    .polygon3 {
+        clip-path: polygon(0 0, 20% 35%, 47% 33%, 40% 78%, 80% 73%, 100% 100%, 0 100%, 0% 30%);
+        background-color: white;
+        width: 100px;
+        height: 100px;
+        margin-top: -40px;
+        display: flex;
+    }
+}

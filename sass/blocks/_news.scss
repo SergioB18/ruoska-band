@@ -1,0 +1,45 @@
+.news {
+    background: url(/src/img/abstract.png) no-repeat center/100%;
+    min-height: 530px;
+    .cards {
+        padding-top: 40px;
+        display: grid;
+        grid-template-columns: 13px auto auto auto 13px;
+        grid-template-rows: repeat(1, auto);
+        gap: 32px;
+        justify-content: center;
+        padding-bottom: 40px;
+        .arrow {
+            padding-top: 100px;
+        }
+        &__img {
+            width: 100%;
+        }
+        &__date, &__description, &__text {
+            font-family: 'Marvel-Regular', sans-serif;
+            color: #858585;
+            font-size: 18px;
+        }
+        &__description {
+            color: black;
+            font-weight: bold;
+            font-size: 24px;
+            padding-top: 10px;
+        }
+        &__text {
+            font-size: 16px;
+            padding-top: 10px;
+        }
+    }
+    &-dekor {
+        margin-top: -40px;
+        display: flex;
+        flex-direction: row;
+        .polygon {
+            clip-path: polygon(0 0, 20% 35%, 47% 33%, 40% 78%, 80% 73%, 100% 100%, 0 100%, 0% 30%);
+            background-color: black;
+            width: 100px;
+            height: 100px;
+        }
+    }
+}

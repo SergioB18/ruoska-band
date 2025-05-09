@@ -1,0 +1,195 @@
+.discography {
+    position: relative;
+    top: -630px;
+    left: 50%;
+    translate: -50%;
+    background: url(../../../src/img/abstract.png) no-repeat center/100%;
+    background-color: white;
+    width: 90%;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 100px;
+    box-shadow: 0px 0px 10px 0px rgba(74, 74, 255, 0.8);
+    display: flex;
+    justify-content: space-between;
+
+    .videos__items {
+        display: flex;
+        &.nonactive {
+            display: none;
+        }
+    }
+    .toalbums {
+        display: none;
+        &.active {
+            display: flex;
+        }
+    }
+
+    .albums-cards, .singles-cards {
+        display: grid;
+        margin-top: 40px;
+        grid-template-columns: repeat(5, auto);
+        grid-template-rows: repeat(1, auto);
+        gap: 20px;
+        justify-content: center;
+        &.nonactive {
+            display: none;
+        }
+        &__item {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            transition: all 0.6s;
+            &:hover {
+                filter: grayscale(100%);
+                transform: scale(1.1);
+            }
+            img {
+                width: 100%;
+            }
+        }
+        &__album {
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+            margin-left: auto;
+            border: 1px solid black;
+            height: 40px;
+            width: 150px;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+        }
+        &__year {
+            color: #c4c4c4;
+        }
+    }
+    .singles {
+        margin-top: 40px;
+    }
+    .singles-cards {
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+    .tracklists-of-albums {
+        display: flex;
+        flex-direction: row;
+        .album-kuori, .album-riisu, .album-radium, .album-amortem, .album-rabies {
+            display: none;
+            flex-direction: row;
+            margin-top: 40px;
+            &.active {
+                display: flex;
+            }
+            a {
+                cursor: pointer;
+            }
+            &__img {
+                gap: 13px;
+                display: flex;
+                flex-direction: column;
+            }
+            &__main, &__footer {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+            &__name, &__release {
+                margin-left: 30px;
+                font-family: 'Marvel-Regular', sans-serif; 
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 36px;
+            }
+            &__release {
+                margin-left: auto;
+                text-transform: none;
+                color:#c4c4c4;
+                font-weight: normal;
+                
+            }
+            &__tracks {
+                margin-left: 60px;
+            }
+            &__title {
+                font-size: 24px;
+                margin-bottom: 30px;
+            }
+            &__song {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: 10px;
+                audio {
+                    width: 120px;
+                    height: 40px;
+                }
+            }
+            &__songname {
+                font-family: 'Marvel-Regular', sans-serif;
+                font-size: 24px;
+                margin-left: 20px;
+            }
+            &__clip {
+                margin-left: 20px;
+                width: 40px;
+                height: 30px;
+                background: red;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 18px;
+                }
+            }
+        }
+
+    }
+
+
+.footer_diskography {
+    margin-top: -550px;
+}
+
+.song-text {
+    border: 2px rgb(245, 242, 242) solid;
+    border-radius: 15px;
+    padding: 40px;
+    margin-left: auto;
+    font-size: 20px;
+    width: 500px;
+    transition: all 0.6s;
+    display: none;
+    background-color: white;
+    
+    &.active {
+        display: inline-block;
+    }
+    &:hover {
+        box-shadow: 0px 0px 10px gray;
+    }
+    &_up {
+        display: flex;
+        margin-bottom: 20px;
+        width: 100%;
+        align-items: center;
+        gap: 5px;
+        .red {
+            color: red;
+            
+        }
+        img {
+            width: 20px;
+            height: 20px;
+            margin-left: auto;
+            cursor: pointer;
+        }
+    }
+    span {
+        font-family: 'Marvel-Regular', sans-serif;
+        font-size: 20px;
+    }
+}

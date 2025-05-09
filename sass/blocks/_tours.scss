@@ -1,0 +1,49 @@
+.tours {
+    margin-top: -1px;
+    min-height: 820px;
+    background: black;
+    .concerts {
+        display: flex;
+        flex-direction: row;
+        padding-top: 40px;
+        justify-content: space-between;
+        align-items: start;
+        padding-bottom: 40px;
+        position: relative;
+        .tickets {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            &__item {
+                background: white;
+                display: flex;
+                flex-direction: row;
+                width: 575px;
+                height: 70px;
+                align-items: center;
+                font-size: 20px;
+            }
+            &__date {
+                padding-left: 16px;
+            }
+            &__city {
+                padding-left: 16px;
+                padding-right: 5px;
+            }
+            &__divider {
+                height: 16px;
+                width: 1px;
+                background: black;
+            }
+            &__hall {
+                padding-left: 5px;
+                color:darkgrey;
+            }
+        }
+        &-img {
+            width: 600px;
+            position: absolute;
+            margin-left: 600px;
+        } 
+    }
+}

@@ -1,0 +1,24 @@
+.about {
+    min-height: 600px;
+    &-block {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: flex;
+        flex-direction: row;
+        .text {
+            width: 500px;
+            gap: 40px;
+            display: flex;
+            flex-direction: column;
+            span {
+                font-family: 'Marvel-Regular', serif;
+                font-size: 18px;
+            }
+        }
+    }
+    .submarine {
+        width: 700px;
+        float: right;
+        margin-top: 155px;
+    }
+}

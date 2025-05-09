@@ -1,0 +1,109 @@
+.main {
+    min-height: 920px;
+    position: relative;
+    background: url(../../../src/img/Main.png) no-repeat 50%/cover;
+    .header {
+        position: absolute;
+        z-index: 2;
+        display: flex;
+        flex-direction: row;
+        padding-top: 26px;
+        .logo {
+            display: flex;
+            flex-direction: row;
+            &__logo {
+                width: 157px;
+            }
+            &__band {
+                padding-left: 30px;
+            }
+            &__text {
+                font-family: 'Marvel-Regular', sans-serif;
+                color: white;
+                font-size: 18px;
+                padding-left: 10px;
+            }    
+        }
+        .socials {
+            padding-top: 25px;
+            padding-left: 250px;
+            display: flex;
+            align-content: center;
+            a {
+                padding-left: 20px;
+            }
+        }
+    }
+    .navigation {
+        padding: 23px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 45px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+        top: 163px;
+        height: 80px;
+        background: linear-gradient(90deg, rgba(34, 34, 34, 0.01) 0%, rgba(0, 0, 0, 0) 100%);
+        box-shadow: 0px 0px 4px 4px rgb(255 255 255 / 60%);
+        &__item {
+            color: white;
+            font-size: 28px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.4s all;
+            &:hover {
+                color: #536AE5;
+            }
+        }
+    }
+    .promo {
+        position: absolute;
+        z-index: 2;
+        display: flex;
+        flex-direction: row;
+        top: 400px;
+        background: rgba(71, 157, 203, 0.2);
+        width: 580px;
+        height: 290px;
+        .latest-news {
+            padding-left: 170px;
+            &__text-news {
+                color: white;
+                font-size: 28px;
+                padding-top: 18px;
+            }
+            &__single {
+                font-size: 96px;
+                color: transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+                background-image: linear-gradient(101.8deg, #F60000 2.63%, #AD0000 47.34%, #FF0000 92.51%);
+                -webkit-text-stroke: 1px #FFFFFF;
+                text-shadow: 0px 0px 12px #ff0000;
+            }
+        }
+        &__img {
+            padding-top: 30px;
+            padding-left: 70px;
+        }
+    }
+    .thunder1 {
+        position: absolute;
+        top: 0px;
+        left: 40px;
+        z-index: 0;
+        animation: flash1 4.5s ease infinite;
+    }
+
+    .thunder2 {
+        position: absolute;
+        top: 0px;
+        left: 1040px;
+        z-index: 0;
+        animation: flash2 4.5s ease infinite;
+        width: 640px;
+    }
+}

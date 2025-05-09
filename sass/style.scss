@@ -1,0 +1,84 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/animations';
+@import '../css/fonts.css';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue Regular', 'Marvel-Regular', sans-serif;
+}
+
+.container {
+    width: 1340px;
+    margin: 0 auto;
+}
+
+.line {
+    width: 900px;
+    height: 8px;
+    background: #0029FF;
+    &_down {
+        margin-left: 163px;
+        margin-top: auto;
+    }
+    &_center {
+        margin-left: 100px;
+        margin-top: auto;
+    }
+    &_downleft {
+        margin-top: 50px;
+    }
+    &_upright {
+        margin-left: auto;
+        width: 200px;
+    }
+}
+
+.triangle {
+    width: 26px;
+    height: 40px;
+    background: red;
+    &_left {
+        clip-path: polygon(0 0, 0% 100%, 50% 0);
+    }
+    &_right {
+        clip-path: polygon(50% 0, 100% 96%, 100% 0);
+    }
+}
+
+
+.hamburger {
+    height: 21px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 2px;
+    span {
+        display: block;
+        width: 24px;
+        height: 3px;
+        background: white;
+        border-radius: 20%;
+    }
+}
+
+@import 'blocks/main';
+@import 'blocks/tours';
+@import 'blocks/buttons';
+@import 'blocks/title';
+@import 'blocks/news';
+@import 'blocks/photos';
+@import 'blocks/videos';
+@import 'blocks/player';
+@import 'blocks/about';
+@import 'blocks/footer';
+@import 'blocks/media';
+@import 'blocks/menu320-576';
+@import 'pages/discography';
+@import 'pages/video';
+@import 'pages/shop';

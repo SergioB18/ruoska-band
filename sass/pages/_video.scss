@@ -1,0 +1,87 @@
+.video {
+    position: relative;
+    top: -630px;
+    left: 50%;
+    translate: -50%;
+    background: url(../../../src/img/abstract.png) no-repeat center/100%;
+    background-color: white;
+    width: 90%;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 100px;
+    box-shadow: 0px 0px 10px 0px rgba(74, 74, 255, 0.8);
+    display: flex;
+    justify-content: space-between;
+    .videos__items {
+        display: flex;
+        &.nonactive {
+            display: none;
+        }
+    }
+    .toalbums {
+        display: none;
+        &.active {
+            display: flex;
+        }
+    }
+    .video-block {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(1, auto);
+        gap: 30px;
+        padding-top: 40px;
+        justify-content: center;
+        padding-bottom: 40px;
+        &_clips {
+            &.active {
+                display: grid;
+            }
+            &.nonactive {
+                display: none;
+            }
+        }
+        &_concerts {
+            display: none;
+            &.active {
+                display: grid;
+            }
+            &.nonactive {
+                display: none;
+            }
+        }
+
+        &__video {
+            width: 700px;
+            height: 450px;
+        }
+    }
+}
+
+.video-pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    &_page {
+        font-size: 20px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        padding-top: 2px;
+        align-items: center;
+        border: 1px solid gray;
+        border-radius: 4px;
+        background: none;
+        cursor: pointer;
+        transition: 0.6s all;
+        &:hover {
+            background: red;
+        }
+
+    }
+}
+
+.footer_diskography {
+    margin-top: -550px;
+}
+

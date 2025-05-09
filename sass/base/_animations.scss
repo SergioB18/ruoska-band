@@ -1,0 +1,80 @@
+@keyframes flash1 {
+    0% {
+        opacity: 1;
+    }
+    9% {
+        opacity: 1;
+    }
+    10% {
+        opacity: 0;
+    }
+    14% {
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+    }
+    19% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0;
+    }
+    24% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    29% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+    34% {
+        opacity: 0;
+    }
+    35% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes flash2 {
+    0% {
+        opacity: 0.3;
+    }
+    14% {
+        opacity: 0;
+    }
+    19% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0;
+    }
+    24% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.3;
+    }
+    29% {
+        opacity: 0.3;
+    }
+    30% {
+        opacity: 0;
+    }
+    34% {
+        opacity: 0;
+    }
+    35% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 0.3;
+    }
+}
